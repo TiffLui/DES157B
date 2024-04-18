@@ -1,4 +1,16 @@
-#swimmingSeaLions {
+.video-poster::before {
+    content: url('images/seal.jpg');
+    display: block;
+    width: 300px; /* Set the width of the poster image */
+    height: 200px; /* Set the height of the poster image */
+    background-size: cover; /* Ensures the image covers the area without distortion */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#swimmingSeals {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -18,6 +30,18 @@
     cursor: pointer;
 }
 
+.fa-volume-mute {
+    position: absolute;
+    top: 10px;
+    right: 70px;
+    font-size: 40px;
+    color: white;
+}
+
+.fa-expand-alt, .fa-volume-mute {
+    z-index: 2; /* Set a higher z-index */
+}
+
 p {
     font-size: 50px;
     font-family: "Kavoon", serif;
@@ -32,13 +56,55 @@ section {
 #line1 {
     position: absolute;
     top: 0%;
-    left: 10%;
+    left: 5%;
 }
 
 #line2 {
     position: absolute;
+    bottom: 5%;
+    left: 27%;
+}
+
+#line3 {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+#line4 {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+#line5 {
+    position: absolute;
     top: 50%;
+    left: 10%;
+}
+
+#line6 {
+    position: absolute;
+    bottom: 3%;
     left: 40%;
+}
+
+#line7 {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+#line8 {
+    position: absolute;
+    bottom: 3%;
+    right: 4%;
+}
+
+#line9 {
+    position: absolute;
+    bottom: 0%;
+    right: 5%;
 }
 
 .hidden {
@@ -47,4 +113,46 @@ section {
 
 .showing {
     opacity: 1;
+}
+
+#marine {
+    width: 100%;
+    height: 100%;
+}
+
+/* Ensure the ripple is visible and positioned correctly */
+.ripple {
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+    transform: scale(0);
+    background: rgba(0, 0, 0, 0.5); /* Adjust the color as needed */
+    border-radius: 50%;
+    position: fixed;
+    /* pointer-events: none; Ensure the ripple doesn't interfere with clicks */
+}
+
+/* Animate Function */
+.animate {
+    animation: ripple-mo 1s cubic-bezier(0, 0, 0.2, 1);
+}
+@keyframes ripple-mo {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(10);
+        opacity: 0;
+    }
+}
+
+/* Sources Page */
+#sourcesBody {
+    background-color: beige;
+}
+#musicSource, #rippleSource, #return {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: black;
 }
