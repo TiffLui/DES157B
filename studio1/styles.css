@@ -38,6 +38,10 @@
     color: white;
 }
 
+.fa-volume-mute:hover {
+    cursor: pointer;
+}
+
 .fa-expand-alt, .fa-volume-mute {
     z-index: 2; /* Set a higher z-index */
 }
