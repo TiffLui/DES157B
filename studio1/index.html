@@ -34,7 +34,10 @@
     </video>
 
     <i class="fas fa-expand-alt"></i>
-    <i class="fas fa-volume-mute"></i>
+    <div id="volumecontrol">
+        <i class="fas fa-volume-mute" id="sound-icon"></i>S
+    </div>
+    
 
     <section id="marine">
         <p id="line1" class="hidden">Oh, I never learned to drive &#128663;</p>
@@ -48,12 +51,12 @@
         <p id="line9" class="hidden">- I Never Learned by Chris James &#127900;</p>
     </section>
 
-    <p><a href="sources.html">Sources</a></p>
+    <p id="sourcesLink"><a href="sources.html">Sources</a></p>
 
     <span class="controller" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;"></span>
     <div class="ripple"></div>
 
-    <audio id="music" src="media/christmas.mp3" preload="auto" loop></audio>
+    <audio id="music" src="media/christmas.mp3" muted preload="auto" loop></audio>
 
 </body>
 </html>
