@@ -1,0 +1,51 @@
+body {
+    background-color: #103348
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+p {
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.3em;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 17px;
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #7db9e4;
+}
+
+a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+section {
+    border-style: solid;
+    border-color: #7db9e4;
+    border-radius: 30px;
+    margin-top: 40px;
+    margin-right: 170px;
+    margin-left: 170px;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
