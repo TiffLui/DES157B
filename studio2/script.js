@@ -10,23 +10,10 @@
         globalData = data;
         // Get the number of entries in the JSON file
         numDataPoints = data.length;
-        //console.log(globalData, numDataPoints);
-        /* const dataPoints = Object.keys(data);
-        // Gets the values and puts them in the globalData array
-        globalData = Object.values(data);
-        // Gets the number of entries in the JSON file
-        numDataPoints = dataPoints.length;
-        //console.log(globalData, numDataPoints); */
     }
 
     function showDistractionInfo(point, data) {
-        
-        //testing
-        const timeElement = document.createElement('p');
-        timeElement.textContent = data[point].time;
-        timeElement.classList.add('dynamic-text'); // Apply the CSS class
-        //ends here
-
+    
         const pics = [
             '<img src= "images/working.png" alt="working" height=300>',
             '<img src= "images/callingParents.png" alt="parents" height=300>',
@@ -41,7 +28,6 @@
             '<img src= "images/optometry.png" alt="appointment" height=300>'
         ];
         document.querySelector('#time').innerHTML = data[point].time;
-        // document.querySelector('#pic').innerHTML = data[point].pic;
         document.querySelector('#pic').innerHTML = pics[globalData[point].pic - 1]; // Adjusted to use the pics array
         document.querySelector('#activity').innerHTML = data[point].activity;
     }
