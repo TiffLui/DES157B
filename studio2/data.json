@@ -1,66 +1,82 @@
 [
-    {
-       "time":"9 AM",
-       "activity":"Did my work"
-    },
-    {
-       "time":"10 AM",
-       "activity":"Did my work"
-    },
-    {
-       "time":"11 AM",
-       "activity":"Called my parents"
-    },
-    {
-       "time":"12 PM",
-       "activity":"Made lunch (Noodles!)"
-    },
-    {
-       "time":"1 PM",
-       "activity":"Told myself I needed dessert and made Tangyuan"
-    },
-    {
-       "time":"2 PM",
-       "activity":"Did my work"
-    },
-    {
-       "time":"3 PM",
-       "activity":"Did my work"
-    },
-    {
-       "time":"4 PM",
-       "activity":"TikTok break! (10 minutes, I told myself it was going to be 5 minutes…)"
-    },
-    {
-       "time":"5 PM",
-       "activity":"Got a bowl of blueberries"
-    },
-    {
-       "time":"6 PM",
-       "activity":"Went to the ARC"
-    },
-    {
-       "time":"7 PM",
-       "activity":"Did my work"
-    },
-    {
-       "time":"8 PM",
-       "activity":"Got dinner with friends (Tacos!)"
-    },
-    {
-       "time":"9 PM",
-       "activity":"Did my work"
-    },
-    {
-       "time":"10 PM",
-       "activity":"Chatted with my friend from back home"
-    },
-    {
-       "time":"11 PM",
-       "activity":"Went out to talk to my roommates"
-    },
-    {
-       "time":"12 AM",
-       "activity":"Registered for an optometry appointment"
-    }
- ]
+   {
+       "time": "9 AM: Did my work diligently",
+       "pic": 1,
+       "activity": "So studious!"
+   },
+   {
+       "time": "10 AM: Did my work diligently",
+       "pic": 1,
+       "activity": "So studious!"
+   },
+   {
+       "time": "11 AM: Called my parents",
+       "pic": 2,
+       "activity": "When are you going to come back home to visit???"
+   },
+   {
+       "time": "12 PM: Made lunch",
+       "pic": 3,
+       "activity": "Mmm carbs..."
+   },
+   {
+       "time": "1 PM: Got myself dessert",
+       "pic": 4,
+       "activity": "Told myself I needed dessert and made Tangyuan"
+   },
+   {
+       "time": "2 PM: Did my work diligently",
+       "pic": 1,
+       "activity": "So studious!"
+   },
+   {
+       "time": "3 PM: Did my work diligently",
+       "pic": 1,
+       "activity": "So studious!"
+   },
+   {
+       "time": "4 PM: TikTok Break",
+       "pic": 5,
+       "activity": "I told myself 5 minutes, but it ended up being 10..."
+   },
+   {
+       "time": "5 PM: Got myself a bowl of blueberries",
+       "pic": 6,
+       "activity": "Felt the munchies"
+   },
+   {
+       "time": "6 PM: Went to the ARC",
+       "pic": 7,
+       "activity": "Cycling, Pickleball, Ping Pong!"
+   },
+   {
+       "time": "7 PM: Did my work diligently",
+       "pic": 1,
+       "activity": "So studious!"
+   },
+   {
+       "time": "8 PM: Got dinner with friends",
+       "pic": 8,
+       "activity": "Taco Night!"
+   },
+   {
+       "time": "9 PM: Did my work diligently",
+       "pic": 1,
+       "activity": "So studious!"
+   },
+   {
+       "time": "10 PM: Chatted with a friend back home",
+       "pic": 9,
+       "activity": "Catching up with friends is always nice!"
+   },
+   {
+       "time": "11 PM: Went out to talk with my roommates",
+       "pic": 10,
+       "activity": "Destressing together!"
+   },
+   {
+       "time": "12 AM: Registered for an optometry appointment",
+       "pic": 11,
+       "activity": "I feel like I'm going blind"
+   }
+]

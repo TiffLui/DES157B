@@ -27,10 +27,10 @@ h3 {
     color: #683E31;
 }
 
-#placeholder {
-    text-align: center;
-    margin-top: 70px;
-    margin-bottom: 70px;
+#timeline {
+    margin: auto;
+    display: block;
+    padding-bottom: 40px;
 }
 
 section {
@@ -51,6 +51,23 @@ p {
     font-weight: 500;
 }
 
-.hidden {
-    display: none;
+#json-container {
+    text-align: center;
+    align-items: center;
+    border-style: dashed;
+    border-width: 10px;
+    border-radius: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-color: #858C51;
+    color: #683E31;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding: 10px;
+}
+
+#time, #activity {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
