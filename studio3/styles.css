@@ -1,0 +1,45 @@
+#gradientContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    z-index: -1; 
+}
+
+h1 {
+    font-family: "Irish Grover";
+    font-weight: 400;
+    font-size: 60px;
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+}
+
+.fa-arrow-rotate-right {
+    font-size: 3em;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+
+.fa-image {
+    font-size: 3em;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+.fa-arrow-down {
+    font-size: 3em;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+.fa-question {
+    font-size: 3em;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
