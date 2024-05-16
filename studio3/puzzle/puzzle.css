@@ -23,7 +23,7 @@ email  : dbulli_puzzle@nuff-respec.com
 		color: #333436;
 		font-family: "Lucida Sans Unicode", "Trebuchet MS", Helvetica, Sans-Serif;
 		font-size: 13px;
-		line-height: 1.6em;
+		/* line-height: 1.6em; */
 		/* padding: 3em 0 3em 50px; */
 		/* width: 00px; */
 	}
@@ -35,7 +35,7 @@ email  : dbulli_puzzle@nuff-respec.com
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 100vh;
+		height: 90vh;
 	}
 
 	/* #content h1 {
