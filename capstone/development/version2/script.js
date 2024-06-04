@@ -16,10 +16,9 @@
             }
         }
     });
-
+    
     // Initialize the draggable element
     const draggableElements = document.querySelectorAll('.drag-drop');
-    console.log(draggableElements.length);
 
     // Existing interact.js setup remains unchanged
     draggableElements.forEach((element) => {
@@ -37,4 +36,5 @@
             },
         });
     });
+
 }())
