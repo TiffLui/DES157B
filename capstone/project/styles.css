@@ -38,7 +38,6 @@ section div {
     width: 100%;
     height: 100%;
     grid-column: span 2;
-    /* margin: auto; */
 }
 
 .odd-start{
@@ -88,31 +87,27 @@ h1 {
 
 body {
     font-family: "Open Sans", sans-serif;
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack elements vertically */
-    min-height: 100vh; /* Set minimum height to fill the viewport */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .content-container {
-    display: flex; /* Use flexbox for layout */
-    flex: 1; /* Allow content container to grow and fill available space */
+    display: flex;
+    flex: 1;
 }
 
 #leftContent {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack elements vertically */
-    flex: 1; /* Allow left content to grow and fill available space */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     width: 75%;
 }
 
 #info {
-    /* background-color: #f9f9f9; */
-    padding: 20px; /* Add some padding */
-    margin-right: 20px; /* Add margin to create space between info and aside */
+    /* background-color: white; */
+    padding: 20px; 
+    margin-right: 20px; 
     margin-top: -110px;
     border: 5px dashed black;
-}
-
-.my-swal-popup br {
-    margin-bottom: 20px; /* Adds a 20px gap between paragraphs */
 }
