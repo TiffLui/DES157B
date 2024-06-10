@@ -23,13 +23,20 @@
     margin-top: -50px;
 }
 
+/* #row1, #row2, #row3, #row4, #row5, #row6, #row7, #row8, #row9 {
+    width: 30px;
+    height: 30px;
+    color: aqua;
+} */
+
 img{
     width: 200px;
     height: auto;
+    border: solid 3px rgba(0, 0, 0, 0);
 }
 
 img:hover{
-    filter: sepia(1) saturate(100);
+    border: solid 3px black;
 }
 
 #grid img {

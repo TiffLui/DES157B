@@ -16,6 +16,11 @@
             }
         }
     });
+
+    //typed.js
+    var typed = new Typed("#typed", {
+        stringsElement: '#typed-strings'
+      });
     
     // Initialize the draggable element
     const draggableElements = document.querySelectorAll('.drag-drop');
@@ -33,6 +38,7 @@
                     target.setAttribute('data-x', x);
                     target.setAttribute('data-y', y);
                 },
+                // addragleave
             },
         });
     });
