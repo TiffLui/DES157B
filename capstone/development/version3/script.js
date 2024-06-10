@@ -1,5 +1,13 @@
-(function(){
-    'use strict';
+
+const gridItem = document.querySelector('section div');
+const itemWidth = gridItem.offsetWidth + "px";
+const itemHeight = gridItem.offsetHeight + "px";
+
+const building = document.querySelector('.draggable');
+building.style.width = itemWidth;
+building.style.height = itemHeight;
+
+$(function() {
 
     // Granim 
     const granimInstance = new Granim({
@@ -17,30 +25,39 @@
         }
     });
 
-    //typed.js
-    var typed = new Typed("#typed", {
-        stringsElement: '#typed-strings'
-      });
-    
-    // Initialize the draggable element
-    const draggableElements = document.querySelectorAll('.drag-drop');
-
-    // Existing interact.js setup remains unchanged
-    draggableElements.forEach((element) => {
-        interact(element).draggable({
-            listeners: {
-                move(event) {
-                    const target = event.target;
-                    const x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx;
-                    const y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
-
-                    target.style.transform = `translate(${x}px, ${y}px)`;
-                    target.setAttribute('data-x', x);
-                    target.setAttribute('data-y', y);
-                },
-                // addragleave
+    function makeDraggable(element) {
+        element.draggable({
+            helper: 'original', // Use the original element during drag
+            revert: 'invalid', // Revert if not dropped on a droppable
+            snap: '.droppable',
+            snapMode: 'inner',
+            data : {
+                dropped: false
             },
         });
-    });
+    }
 
-}())
+    makeDraggable($('.draggable'));
+    
+    $('section div').droppable({
+        accept: '.draggable',
+        drop: function(event, ui) {
+            // Check if the draggable element is already in its target location
+            var isAlreadyDropped = $(this).children().length > 0 && $(this).children()[0] === ui.helper[0];
+            $(this).append(ui.draggable);
+            ui.draggable.position({my: "center", at: "center", of: this});
+            ui.draggable.drop
+            if (!(ui.draggable.data('dropped'))) {
+                const newDraggable = ui.draggable.clone();
+                ui.draggable.data('dropped',true)
+                newDraggable.css({
+                    width: itemWidth,
+                    height: itemHeight
+                }).appendTo('aside');
+                makeDraggable(newDraggable);
+            }
+            
+            
+        }
+    });
+});

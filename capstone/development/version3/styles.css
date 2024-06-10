@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 #gradientContainer {
     position: fixed;
     top: 0;
@@ -7,74 +11,80 @@
     z-index: -1; 
 }
 
-*{
-    padding: 0;
-    margin: 0;
+body {
+    font-family: Arial;
 }
 
-#grid{
-    margin-top: 200px;
+main {
+    display: flex;
 }
 
-.row{
+section {
+    width: 75%;
+    /* width: 1100px; */
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 38.5vw;
+    /* height: 600px; */
+}
+
+section div {
+    background-image: url('images/square.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* width: 147px; */
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: -50px;
+    height: 100%;
+    grid-column: span 2;
+    /* margin: auto; */
 }
 
-/* #row1, #row2, #row3, #row4, #row5, #row6, #row7, #row8, #row9 {
-    width: 30px;
-    height: 30px;
-    color: aqua;
-} */
-
-img{
-    width: 200px;
-    height: auto;
-    border: solid 3px rgba(0, 0, 0, 0);
+.odd-start{
+    grid-column: 1 / span 2;
 }
 
-img:hover{
-    border: solid 3px black;
+.even-start{
+    grid-column: 2 / span 2;
 }
 
-#grid img {
-    width: 174px;
-    margin: 3px;
-}
-
-#info, #components {
-    border: 5px dashed black;
-    padding: 20px;
-}
-
-#mainContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-}
-
-#grid {
-    margin-top: 20px;
-}
-
-#leftContent {
+aside{ 
+    width: 25%;
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
-    width: 60%;
-    padding-left: 20px;
+    gap: 30px;
+    margin-left: 60px;
+    /* border: 1px dashed black; */
+    padding: 10px;
+    top: 45px;
 }
 
-#components {
-    width: 40%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding-right: 40px;
+.draggable {
+    width: 250px;
+    height: 100px;
+    border:none;
+    position: relative;
+    margin: 0px;
+    top: 20px;
+}
+
+.building {
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    max-width: 100%;
 }
 
 h1 {
     font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
 }

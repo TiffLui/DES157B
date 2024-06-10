@@ -3,23 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing Your Future V3</title>
 
-    <!-- Normalize CSS for browser compatability -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <!-- jQuery UI styles -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/themes/smoothness/jquery-ui.css">
+
+    <!-- My styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- jQuery defered -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <!-- jQuery UI defered -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js" defer></script>
 
     <!-- granim -->
     <script src="granim/granim.min.js" defer></script>
 
-    <!-- My Styles -->
-    <link href="styles.css" rel="stylesheet">
-
-    <!-- My Script -->
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    
+    <!-- My script defered -->
     <script src="script.js" defer></script>
-
-    <title>Designing Your Future</title>
-        
 </head>
 <body>
+    <h1>Design Your Walkable City!</h1>
     <canvas id="gradientContainer"></canvas>
+
+    <main>
+        <section>
+            <!-- row 1 -->
+            <div class="odd-start"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <!-- row 2 -->
+            <div class="even-start"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <!-- row 3 -->
+            <div class="odd-start"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <!-- row 4 -->
+            <div class="even-start"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <div id="info">
+            <p>Filler text</p>
+            <p>filler text</p>
+        </div>
+
+        <aside>
+            <div class="draggable">
+                <img src="images/Apartment.svg" class="building">
+            </div>
+            <div class="draggable">
+                <img src="images/Bakery.svg" class="building">
+            </div>
+            <div class="draggable">
+                <img src="images/Bookstore.svg" class="building">
+            </div>
+            <div class="draggable">
+                <img src="images/Boutique.svg" class="building">
+            </div>
+            <div class="draggable">
+                <img src="images/Electronics.svg" class="building">
+            </div>
+            <div class="draggable">
+                <img src="images/CoffeeShop.svg" class="building">
+            </div>
+            <div class="draggable">
+                <img src="images/FireStation.svg" class="building">
+            </div>
+            <div class="draggable">
+                <img src="images/GroceryShop.svg" class="building">
+            </div>
+            <div class="draggable">
+                <img src="images/Hospital.svg" class="building">
+            </div>
+            <div class="draggable">
+                <img src="images/Office.svg" class="building">
+            </div>
+            <div class="draggable">
+                <img src="images/Park.svg" class="building">
+            </div>
+        </aside>
+    </main>
+
+    
+    
 </body>
 </html>
