@@ -3,9 +3,11 @@ const gridItem = document.querySelector('section div');
 const itemWidth = gridItem.offsetWidth + "px";
 const itemHeight = gridItem.offsetHeight + "px";
 
-const building = document.querySelector('.draggable');
-building.style.width = itemWidth;
-building.style.height = itemHeight;
+const buildings = document.querySelectorAll('.draggable');
+buildings.forEach(building => {
+    building.style.width = itemWidth;
+    building.style.height = itemHeight;
+});
 
 $(function() {
 
